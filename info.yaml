@@ -29,7 +29,7 @@ project:
     - "Output_C_Block.vhd"
     - "Output_C_Block_IO.vhd"
     - "Tapped_Shift_Register.vhd"
-    - "Three_Way_S_Blcok.vhd"
+    - "Three_Way_S_Block.vhd"
     - "Two_Way_S_Block.vhd"
     - "fpga_top.vhd"
     - "project.vhd"
