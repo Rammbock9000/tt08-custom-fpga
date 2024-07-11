@@ -4,14 +4,14 @@ project:
   author:       "Nicolai Fiege"      # Your name
   discord:      "CptChaos"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A custom FPGA with 2x2 tiles, having a total of eight individual 3-input LUTs"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  language:     "VHDL" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     100000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_Rammbock9000_custom_fpga"
+  top_module:  "tt_um_Rammbock9000_custom_fpga_vhd"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
@@ -33,7 +33,7 @@ project:
     - "Two_Way_S_Block.vhd"
     - "fpga_top.vhd"
     - "project.vhd"
-    - "project.v"
+#    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
