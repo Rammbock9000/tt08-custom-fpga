@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+1) Configure the FPGA as you like (docu for the layout/bitstream coming soon).
+2) Use it.
 
 ## How to test
 
-Explain how to use your project
+Configure the FPGA as you like and see if it works.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+You need some way to automatically stream a bitstream into the FPGA (alternatively, you can also put in all 444 configuration bits by hand). Any microcontroller should work just fine.
