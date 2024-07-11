@@ -2,16 +2,31 @@
 # See https://docs.cocotb.org/en/stable/quickstart.html for more info
 
 # defaults
-SIM ?= icarus
-TOPLEVEL_LANG ?= verilog
+SIM ?= questa
+TOPLEVEL_LANG ?= vhdl
 SRC_DIR = $(PWD)/../src
 PROJECT_SOURCES = project.v
+PROJECT_SOURCES =+ Basic_Logic_Element.vhd
+PROJECT_SOURCES =+ C_Block_IO.vhd
+PROJECT_SOURCES =+ FPGA_Simulation.vhd
+PROJECT_SOURCES =+ FPGA_Simulation_Package.vhd
+PROJECT_SOURCES =+ Flipflop.vhd
+PROJECT_SOURCES =+ Four_Way_S_Block.vhd
+PROJECT_SOURCES =+ Input_C_Block.vhd
+PROJECT_SOURCES =+ Input_C_Block_IO.vhd
+PROJECT_SOURCES =+ Logic_Cluster.vhd
+PROJECT_SOURCES =+ Output_C_Block.vhd
+PROJECT_SOURCES =+ Output_C_Block_IO.vhd
+PROJECT_SOURCES =+ Tapped_Shift_Register.vhd
+PROJECT_SOURCES =+ Three_Way_S_Blcok.vhd
+PROJECT_SOURCES =+ Two_Way_S_Block.vhd
+PROJECT_SOURCES =+ fpga_top.vhd
 
 ifneq ($(GATES),yes)
 
 # RTL simulation:
 SIM_BUILD				= sim_build/rtl
-VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES))
+VHDL_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES))
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 else
