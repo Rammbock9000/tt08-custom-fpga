@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-entity tt_um_Rammbock9000_custom_fpga_vhd is
+entity tt_um_Rammbock9000_custom_fpga is
     port (
         ui_in: in std_logic_vector(7 downto 0);
         uo_out: out std_logic_vector(7 downto 0);
@@ -13,9 +13,9 @@ entity tt_um_Rammbock9000_custom_fpga_vhd is
         clk: in std_logic;
         rst_n: in std_logic
     );
-end tt_um_Rammbock9000_custom_fpga_vhd;
+end tt_um_Rammbock9000_custom_fpga;
 
-architecture tt_um_Rammbock9000_custom_fpga_vhd of tt_um_Rammbock9000_custom_fpga_vhd is
+architecture tt_um_Rammbock9000_custom_fpga of tt_um_Rammbock9000_custom_fpga is
 
     signal rst: std_logic;
     signal data_in: std_logic_vector(0 to 7);
@@ -71,4 +71,4 @@ begin
     -- invert reset polarity because we use active-high resets internally
     rst <= not rst_n;
 
-end tt_um_Rammbock9000_custom_fpga_vhd;
+end tt_um_Rammbock9000_custom_fpga;
