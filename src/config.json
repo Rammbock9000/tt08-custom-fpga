@@ -34,7 +34,7 @@
   "//": "Configuration docs: https://openlane.readthedocs.io/en/latest/reference/configuration.html",
 
   "//": "Add VHDL files for synthesis",
-  "VERILOG_FILES": [
+  "VHDL_FILES": [
     "dir::src/FPGA_Simulation_Package.vhd", 
     "dir::src/Flipflop.vhd", 
     "dir::src/Tapped_Shift_Register.vhd", 
