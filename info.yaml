@@ -33,7 +33,7 @@ project:
     - "Two_Way_S_Block.vhd"
     - "fpga_top.vhd"
     - "project.vhd"
-#    - "project.v"
+    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
