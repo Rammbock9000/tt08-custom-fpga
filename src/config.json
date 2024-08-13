@@ -34,6 +34,8 @@
   "//": "Configuration docs: https://openlane.readthedocs.io/en/latest/reference/configuration.html",
 
   "//": "Add VHDL files for synthesis",
+  "VHDL_FILES": ["dir::src/FPGA_Simulation_Package.vhd", "dir::src/Flipflop.vhd", "dir::src/Tapped_Shift_Register.vhd", "dir::src/Basic_Logic_Element.vhd", "dir::src/Logic_Cluster.vhd", "dir::src/C_Block_IO.vhd", "dir::src/Four_Way_S_Block.vhd", "dir::src/Input_C_Block.vhd", "dir::src/Input_C_Block_IO.vhd", "dir::src/Output_C_Block.vhd", "dir::src/Output_C_Block_IO.vhd", "dir::src/Three_Way_S_Block.vhd", "dir::src/Two_Way_S_Block.vhd", "dir::src/FPGA_Simulation.vhd", "dir::src/fpga_top.vhd", "dir::src/project.vhd"],
+
   
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
   "//": "!!! DO NOT CHANGE ANYTHING BELOW THIS POINT !!!",
